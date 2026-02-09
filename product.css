@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+   
+    
+}
+
+body {
+   
+}
+
+/* ================= HEADER ================= */
+
+header {
+    background-color: black;
+    display: flex;
+    height: 70px;
+    padding: 15px 50px;
+    border-bottom: 2px solid #6aa84f;
+    box-shadow: 0px 0px 8px green;
+}
+
+header h1 {
+    width: 60%;
+    color:red;
+    font-size: 60px;
+    font-weight: bold;
+    display: inline-block;
+}
+ .menu{
+   
+    width: 40%;
+    display: flex;
+    justify-content:center;
+    text-align:justify;
+    
+}
+nav {
+    float: right;
+    margin-top: 10px;
+}
+
+nav a {
+   
+    text-decoration: none;
+    color: red;
+    margin-left: 25px;
+    font-weight: 600;
+}
+
+/* ================= CATEGORIES ================= */
+
+.categories {
+    display: flex;
+   justify-content: space-evenly;
+    gap: 35px;
+    padding: 25px 0;
+    box-shadow: 0px 0px 8px green;
+}
+
+.category {
+     box-shadow: 0px 0px 8px green;
+    text-align: center;
+    cursor: pointer;
+}
+
+.category img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid #6aa84f;
+    background: #fff;
+    padding: 00px;
+    box-shadow: 0px 2px 5px #6aa84f;
+}
+
+.category p {
+    margin-top: 8px;
+    font-weight: 600;
+    color: #b45f06;
+}
+
+/* ================= PRODUCTS ================= */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    padding: 40px 80px;
+}
+
+.card {
+    height: 450px;
+    background-color: #fdf6cf;
+    border: 2px solid #6aa84f;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 5px 5px 10px #6aa84f;
+}
+
+.card img {
+    width: 100%;
+    
+    border: 0px solid #6aa84f;
+    border-radius: 10%;
+    object-fit: contain;
+}
+
+

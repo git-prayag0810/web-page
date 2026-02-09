@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+    <style>
+      .main-container {
+        height: 100vh;
+      }
+      .taskbar {
+        height: 20vh;
+      }
+      .infobox {
+        height: 80vh;
+      }
+      .form-control::placeholder {
+        color: #28a745;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="container-fluid bg-dark bg-gradient taskbar g-0">
+        <div class="row mx-0">
+          <div class="col-12 py-2">
+            <h1 class="text-warning">Github Search</h1>
+          </div>
+        </div>
+        <div class="row mx-0">
+          <div class="col-9 py-2">
+            <input
+              class="form-control bg-dark text-light border border-success rounded-pill"
+              placeholder="github username"
+            />
+          </div>
+          <div class="col-3 py-2 px-2">
+            <button
+              class="btn btn-outline-success px-4"
+              data-bs-toggle="modal"
+              data-bs-target="#searchingerror"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid infobox">
+        <div class="row my-0 h-100">
+          <div class="col-4 bg-dark bg-gradient p-3">
+            <div
+              class="card bg"
+              style="width: 90%; height: 100%; place-self: center"
+            >
+              <div class="card-header">
+                <img
+                  src="https://tse3.mm.bing.net/th/id/OIP.ysTzEXNYtxMsefvzPYQ2cwHaGO?rs=1&pid=ImgDetMain&o=7&rm=3"
+                  alt=""
+                  class="card-img-top"
+                />
+              </div>
+              <div class="card-body">
+                <h2>Narendra Bhai Modi</h2>
+                <p>
+                  Narendra Modi is India’s Prime Minister, known for economic
+                  reforms, Digital India, infrastructure growth, foreign
+                  diplomacy, and welfare schemes, leading BJP.
+                </p>
+                <div class="d-flex justify-content-center mt-3">
+                  <button
+                    class="btn btn-outline-success"
+                    data-bs-target="#profiledetails"
+                    data-bs-toggle="modal"
+                  >
+                    profile details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-8 bg-dark bg-gradient">
+            <ul class="list-group list-group-flush bg-transparent">
+              <li class="list-group-item bg-transparent text-light">
+                Swachh Bharat Abhiyan
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                Digital India
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                Make in India
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                Startup India
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                Ayushman Bharat
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                Pradhan Mantri Awas Yojana
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                Jal Jeevan Mission
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                Smart Cities Mission
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                Ujjwala Yojana
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                Atal Pension Yojana
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                Skill India Mission
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                Mudra Yojana
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                PM Kisan Samman Nidhi
+              </li>
+              <li class="list-group-item bg-transparent text-light">
+                UPI Digital Payments Initiative
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal bg-transparent" id="searchingerror">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="text-center">username not found</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              No GitHub profile found for this username. Make sure it’s correct
+              and try again.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-success" data-bs-dismiss="modal">
+              cancel
+            </button>
+            <button class="btn btn-outline-danger">proceed</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="profiledetails">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="text-center">profile not found</h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Oops! This profile doesn’t exist on GitHub. Please enter a valid
+              username and search again
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-outline-success" data-bs-dismiss="modal">
+              cancel
+            </button>
+            <button class="btn btn-outline-danger">proceed</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
